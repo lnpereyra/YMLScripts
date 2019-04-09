@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import filedialog as fd
 from tkinter import *
  
-class Product:
+class MainScript:
     def __init__(self,window):
         self.wind = window
         self.wind.title('Scripts App')
@@ -13,11 +13,11 @@ class Product:
         frame.grid(row = 0, column = 0,columnspan = 3, pady = 50, padx=60)
         #Button1
         tk.Button(frame, text = 'Post Process YML Script', command = self.post_run_script).grid(row = 3, columnspan = 2, sticky = W + E)
-        #Button
+        #Button2
         tk.Button(frame, text = 'New Script').grid(row = 4, columnspan = 2, sticky = W + E)
-        #Button
+        #Button3
         tk.Button(frame, text = 'New Script').grid(row = 5, columnspan = 2, sticky = W + E)
-        #Button
+        #Button4
         tk.Button(frame, text = 'New Script').grid(row = 6, columnspan = 2, sticky = W + E)
  
     def post_run_script(self):
@@ -44,5 +44,5 @@ class Product:
  
 if __name__== '__main__' :
     window = Tk()
-    application = Product(window)
+    application = MainScript(window)
     window.mainloop()
